@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body style="background-color: black">
+    <div id="header">
+        
+        <div class="xCount">
+            X's WIN:&nbsp;<label id="xCount">0</label>
+        </div>
+        <div id="result" style="display: inline;right: 40px;position: relative;">
+           
+        </div>
+        <div class="oCount">
+            O's WIN:&nbsp;<label id="oCount">0</label>
+        </div>
+        <div class="defaultButtons">
+            <input class="playAgain btn btn-primary" type="button" value="Play Again"/>
+            <input class="reset btn btn-primary" type="button" value="Reset"/>
+        </div>    
+    </div>
+    
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <table>
+            <tr>
+                <td class="gameSquare">
+                    <canvas></canvas>
+                </td>
+                <td class="gameSquare">
+                    <canvas></canvas>
+                </td>
+                <td class="gameSquare">
+                    <canvas></canvas>
+                </td>
+            </tr>
+            <tr>
+                <td class="gameSquare">
+                    <canvas></canvas>
+                </td>
+                <td class="gameSquare">
+                    <canvas></canvas>
+                </td>
+                <td class="gameSquare">
+                    <canvas></canvas>
+                </td>
+            </tr>
+            <tr>
+                <td class="gameSquare">
+                    <canvas></canvas>
+                </td>
+                <td class="gameSquare">
+                    <canvas></canvas>
+                </td>
+                <td class="gameSquare">
+                    <canvas></canvas>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+
+<div class="main" id="overlay"></div>
+<div id="popup">
+    <br><br><br><br>
+    <div>
+        <input type="button" class="btn btn-primary" value="1 Player" onclick="begin('AI')"/>
+    </div>
+    <br><br>
+    <div>
+        <input type="button" class="btn btn-primary" value="2 Player" onclick="begin('HUMAN')"/>
+    </div>
+
+</div>
+</body>
+</html>
